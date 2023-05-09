@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>march project / pb</title>
+</head>
+<body>
+
+  <nav class="pt-3">
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="calc">calculator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="form">registration form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="surv">survey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="game">tic-tac-toe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="todo">to-do list</a>
+      </li>
+      <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-tab="counter">counter</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="container section d-none" data-tab="calc">
+      <h1 class="pt-3 text-center">calculator</h1>
+      <div class="calc">
+        <input type="text" class="form-control calc-field" disabled>
+        <div class="calc-row">
+          <button class="btn calc-btn btn-light btn-number">1</button>
+          <button class="btn calc-btn btn-light btn-number">2</button>
+          <button class="btn calc-btn btn-light btn-number">3</button>
+          <button class="btn calc-btn btn-light btn-operator">+</button>
+        </div>
+        <div class="calc-row">
+          <button class="btn calc-btn btn-light btn-number">4</button>
+          <button class="btn calc-btn btn-light btn-number">5</button>
+          <button class="btn calc-btn btn-light btn-number">6</button>
+          <button class="btn calc-btn btn-light btn-operator">-</button>
+        </div>
+        <div class="calc-row">
+          <button class="btn calc-btn btn-light btn-number">7</button>
+          <button class="btn calc-btn btn-light btn-number">8</button>
+          <button class="btn calc-btn btn-light btn-number">9</button>
+          <button class="btn calc-btn btn-light btn-operator">*</button>
+        </div>
+        <div class="calc-row">
+          <button class="btn calc-btn btn-danger btn-delete">C</button>
+          <button class="btn calc-btn btn-light btn-number">0</button>
+          <button class="btn calc-btn btn-success btn-result">=</button>
+          <button class="btn calc-btn btn-light btn-operator">/</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section d-none" data-tab="form">
+      <h1 class="pt-3 text-center">registration</h1>
+
+      <div class="d-flex justify-content-center mt-4 mb-5">
+        <form class="form">
+          
+          <div class="form-row mb-2">
+            <div class="form-group col-md-6">
+              <label for="first-name">first name</label>
+              <input type="text" class="form-control form-sq first-name" name="firstName" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">last name</label>
+              <input type="text" class="form-control form-sq last-name" name="lastName" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-row mb-2">
+            <div class="form-group col-md-2">
+              <label for="age">age</label>
+              <input type="text" class="form-control form-sq age" name="age" placeholder="18+">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="phone">phone</label>
+              <input type="text" class="form-control form-sq phone" name="phone" placeholder="042 123456789">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email">email</label>
+              <input type="text" class="form-control form-sq email" name="email" placeholder="name@mail.com">
+            </div>
+          </div>
+
+          <div class="form-group contact-group mb-4">
+            <label>prefered&nbsp;contact&nbsp;&nbsp;</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input contact-phone" type="radio" name="contact" value="option1">
+              <label class="form-check-label" for="option1">phone</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input contact-email" type="radio" name="contact" value="option2">
+              <label class="form-check-label" for="option2">email</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input contact-post" type="radio" name="contact" value="option3">
+              <label class="form-check-label" for="option3">post</label>
+            </div>
+
+            <div class="form-group mt-3 d-none">
+              <label for="address">address</label>
+              <input type="text" name="address" class="form-control form-sq contact-address">
+            </div>
+          </div>
+
+          <div class="form-group birthdate-group mb-4">
+            <label>birthday&nbsp;&nbsp;</label>
+            <div class="form-check form-check-inline">
+              <select name="birth-month" class="form-control form-control-sm form-sq birth-month">
+                <option value="" disabled selected>month</option>
+                <option value="0">january</option>
+                <option value="1">february</option>
+                <option value="2">march</option>
+                <option value="3">april</option>
+                <option value="4">may</option>
+                <option value="5">june</option>
+                <option value="6">july</option>
+                <option value="7">august</option>
+                <option value="8">september</option>
+                <option value="9">october</option>
+                <option value="10">november</option>
+                <option value="11">december</option>
+              </select>
+            </div>
+            <div class="form-check form-check-inline">
+              <select name="birth-day" class="form-control form-control-sm form-sq birth-day">
+                <option value="" disabled selected>day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row password-group mt-4">
+            <div class="form-group col-md-6">
+              <label for="password">password</label>
+              <input type="password" name="password" class="form-control form-sq password">
+              <i class="eye fa-solid fa-eye"></i>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="repeat-password">repeat password</label>
+              <input type="password" name="repeat-password" class="form-control form-sq repeat-password">
+              <i class="eye fa-solid fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="form-group notification-group mb-2">
+            <div class="form-check">
+              <input class="form-check-input personal-data" type="checkbox" name="personal-data" id="personal-data" checked>
+              <label class="form-check-label" for="personal-data">
+                i approve you get my data
+              </label>
+            </div>
+            <div class="form-check mb-1">
+              <input class="form-check-input notification" type="checkbox" name="notification" id="notification">
+              <label class="form-check-label" for="notification">
+                i approve to get notifications
+              </label>
+            </div>
+          </div>
+          
+          <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn form-btn btn-primary" id="submit">sign up</button>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="form-submit modal-window d-none">
+        <div class="modal-dialog">
+          <div class="modal-content form-sq">
+            <div class="modal-header">
+              <h5 class="modal-title" id="form-submited-label">you've been registered</h5>
+              <button type="button" class="close close-window">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container section d-none" data-tab="surv">
+      <h1 class="pt-3 text-center">survey</h1>
+      <div class="form-group box mb-4">
+        <label class="question"></label>
+        <br>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label label" for='radio-1'></label>
+          <input class="form-check-input answer-button" type="radio" name="box" id="radio-1">
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label label" for='radio-2'></label>
+          <input class="form-check-input answer-button" type="radio" name="box" id="radio-2">
+        </div>
+        <br>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label label" for='radio-3'></label>
+          <input class="form-check-input answer-button" type="radio" name="box" id="radio-3">
+        </div>
+        <br>
+        <button class="btn btn-light" disabled>Проверить</button>
+      </div>
+      <p class="survey-result"></p>
+
+
+    </section>
+    
+    <section class="container section d-none" data-tab="game">
+      <h1 class="pt-3 text-center">tic-tac-toe</h1>
+        <div class="game">
+          <div class="row">
+            <button data-x='0' data-y='0' class="btn" id="1"></button>
+            <button data-x='0' data-y='1' class="btn" id="2"></button>
+            <button data-x='0' data-y='2' class="btn" id="3"></button>
+            </div>
+
+            <div class="row">
+            <button data-x='1' data-y='0' class="btn" id="4"></button>
+            <button data-x='1' data-y='1' class="btn" id="5"></button>
+            <button data-x='1' data-y='2' class="btn" id="6"></button>
+            </div>
+
+            <div class="row">
+            <button data-x='2' data-y='0' class="btn" id="7"></button>
+            <button data-x='2' data-y='1' class="btn" id="8"></button>
+            <button data-x='2' data-y='2' class="btn" id="9"></button>
+            </div> 
+          </div>
+        <br>
+        <div class="winnerDisplay">
+          <input type="text" name="winner" class="winner form-control d-none" disabled>
+        </div>
+
+    </section>
+    
+    <section class="container section d-none" data-tab="todo">
+      <h1 class="pt-3 text-center">task list</h1>
+      <form class="todo-form">
+        <div class="form-group col-md-6">
+          <label for="todo">Запишите что купить</label>
+          <input type="text" class="form-control todo-input" id="todo">
+        </div>     
+      </form>
+      <div class="todo-list items">
+        <ul class="todo-list">
+        </ul> 
+      </div>
+    </section>
+
+    <section class="container section" data-tab="counter">
+      <h1 class="pt-3 text-center">Counter</h1>
+      <div class="counter-wrapper">
+      <button class="btn btn-outline-primary plus">+</button>
+      <input type="text" class="counter">
+      <button class="btn btn-outline-primary minus">-</button>
+    </div>
+    </section>
+
+  </main>
+
+  <script src="./js/script1.js"></script>
+  <script src="./js/calc.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/survey.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/counter.js"></script>
+
+</body>
+</html>
