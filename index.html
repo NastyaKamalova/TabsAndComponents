@@ -30,7 +30,10 @@
       </li>
       <li class="nav-item">
       <li class="nav-item">
-        <a class="nav-link active" href="#" data-tab="counter">counter</a>
+        <a class="nav-link" href="#" data-tab="counter">counter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-tab="timer">timer</a>
       </li>
     </ul>
   </nav>
@@ -299,7 +302,7 @@
       </div>
     </section>
 
-    <section class="container section" data-tab="counter">
+    <section class="container section d-none" data-tab="counter">
       <h1 class="pt-3 text-center">Counter</h1>
       <div class="counter-wrapper">
       <button class="btn btn-outline-primary plus">+</button>
@@ -308,6 +311,23 @@
     </div>
     </section>
 
+    <section class="container section" data-tab="timer">
+      <h1 class="timer__head pt-3">Timer</h1>
+      <div class="timer__display">0</div>
+      <div class="timer__buttons">
+        <button class="timer__play">Play</button>
+        <button class="timer__pause">Pause</button>
+        <button class="timer__reset">Reset</button>
+        <button class="timer__stop">Stop</button>
+        <button class="timer__reverse">Reverse</button>
+      </div>
+      <div class="input__box">
+      <label>
+        delay:
+        <input class="timer__delay" value="1000">
+      </label>
+      </div>
+    </section>
   </main>
 
   <script src="./js/script1.js"></script>
@@ -317,6 +337,7 @@
   <script src="./js/game.js"></script>
   <script src="./js/todo.js"></script>
   <script src="./js/counter.js"></script>
+  <script src="./js/timer.js"></script>
 
 </body>
 </html>

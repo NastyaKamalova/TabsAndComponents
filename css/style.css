@@ -183,3 +183,41 @@
   padding: 0;
   
 }
+
+* {
+	box-sizing: border-box;
+}
+.timer {
+	max-width: 750px;
+	padding: 100px 10px;
+	margin: auto;
+}
+.timer__head {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.timer__display {
+	padding: 20px 0 50px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+}
+.timer__play,
+.timer__pause,
+.timer__reset,
+.timer__stop,
+.timer__reverse {
+	width: calc(20% - 10px);
+	padding: 20px;
+	font-size: 20px;
+}
+.input__box {
+	text-align: center;
+  margin-top: 20px;
+}
+.timer__delay {
+	padding: 10px;
+	font-size: 20px;
+	
+}
